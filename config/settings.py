@@ -18,7 +18,7 @@ ALLOWED_HOSTS = ["*"]
 
 # Application definition
 
-INSTALLED_APPS = [
+DJANGO_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -26,6 +26,22 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
 ]
+
+THIRD_PARTY_APPS = [
+    "django_unicorn",
+    "django_view_decorator",
+]
+
+DEVELOPMENT_APPS = [
+    "django_browser_reload",
+]
+
+LOCAL_APPS = [
+
+]
+
+INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
+INSTALLED_APPS = INSTALLED_APPS + DEVELOPMENT_APPS if DEBUG else INSTALLED_APPS
 
 
 MIDDLEWARE = [
@@ -37,6 +53,7 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
+MIDDLEWARE = ["django_browser_reload.middleware.BrowserReloadMiddleware"] + MIDDLEWARE if DEBUG else MIDDLEWARE
 
 
 ROOT_URLCONF = "config.urls"
@@ -45,7 +62,7 @@ TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
         "DIRS": [
-            BASE_DIR / "templates"
+            BASE_DIR / "templates",
         ],
         "APP_DIRS": True,
         "OPTIONS": {
