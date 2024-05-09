@@ -1,0 +1,182 @@
+[
+    {
+        "model": "tasks.task",
+        "pk": 1,
+        "fields": {
+            "title": "Write an email to the project team",
+            "slug": "write-an-email-to-the-project-team",
+            "description": "Draft an email updating the project team on the latest developments and send it out.",
+            "completed": false,
+            "created": "2024-05-07T23:14:41.168Z",
+            "updated": "2024-05-07T23:14:41.168Z"
+        }
+    },
+    {
+        "model": "tasks.task",
+        "pk": 2,
+        "fields": {
+            "title": "Finish the report for the Monday meeting",
+            "slug": "finish-the-report-for-the-monday-meeting",
+            "description": "Complete the pending sections of the report that is due for the upcoming meeting.",
+            "completed": false,
+            "created": "2024-05-07T23:15:01.350Z",
+            "updated": "2024-05-07T23:15:01.350Z"
+        }
+    },
+    {
+        "model": "tasks.task",
+        "pk": 3,
+        "fields": {
+            "title": "Call the client to discuss the new proposal",
+            "slug": "call-the-client-to-discuss-the-new-proposal",
+            "description": "Schedule a call with the client to walk them through the new proposal and address any questions they might have.",
+            "completed": true,
+            "created": "2024-05-07T23:15:19.758Z",
+            "updated": "2024-05-07T23:15:19.758Z"
+        }
+    },
+    {
+        "model": "tasks.task",
+        "pk": 4,
+        "fields": {
+            "title": "Update the project plan with recent changes",
+            "slug": "update-the-project-plan-with-recent-changes",
+            "description": "Incorporate the recent changes into the project plan and share it with the stakeholders.",
+            "completed": false,
+            "created": "2024-05-07T23:15:36.922Z",
+            "updated": "2024-05-07T23:15:36.922Z"
+        }
+    },
+    {
+        "model": "tasks.task",
+        "pk": 5,
+        "fields": {
+            "title": "Review the budget for the next quarter",
+            "slug": "review-the-budget-for-the-next-quarter",
+            "description": "Go through the budget allocations for the next quarter and make necessary adjustments.",
+            "completed": true,
+            "created": "2024-05-07T23:15:56.133Z",
+            "updated": "2024-05-07T23:15:56.133Z"
+        }
+    },
+    {
+        "model": "tasks.task",
+        "pk": 6,
+        "fields": {
+            "title": "Prepare a presentation for the sales team",
+            "slug": "prepare-a-presentation-for-the-sales-team",
+            "description": "Create a comprehensive presentation highlighting the product features for the sales team.",
+            "completed": false,
+            "created": "2024-05-07T23:16:09.322Z",
+            "updated": "2024-05-07T23:16:09.322Z"
+        }
+    },
+    {
+        "model": "tasks.task",
+        "pk": 7,
+        "fields": {
+            "title": "Organize files on the shared drive",
+            "slug": "organize-files-on-the-shared-drive",
+            "description": "Clean up and organize the files on the shared drive for easy access.",
+            "completed": false,
+            "created": "2024-05-07T23:16:22.543Z",
+            "updated": "2024-05-07T23:16:22.543Z"
+        }
+    },
+    {
+        "model": "tasks.task",
+        "pk": 8,
+        "fields": {
+            "title": "Schedule a team building activity",
+            "slug": "schedule-a-team-building-activity",
+            "description": "Plan and schedule a fun team building activity to boost morale.",
+            "completed": true,
+            "created": "2024-05-07T23:16:39.273Z",
+            "updated": "2024-05-07T23:16:39.273Z"
+        }
+    },
+    {
+        "model": "tasks.task",
+        "pk": 9,
+        "fields": {
+            "title": "Update the company website",
+            "slug": "update-the-company-website",
+            "description": "Make necessary updates to the company website, including news, blogs, and team profiles.",
+            "completed": true,
+            "created": "2024-05-07T23:16:52.830Z",
+            "updated": "2024-05-07T23:16:52.830Z"
+        }
+    },
+    {
+        "model": "tasks.task",
+        "pk": 10,
+        "fields": {
+            "title": "Research industry trends",
+            "slug": "research-industry-trends",
+            "description": "Spend some time researching the latest trends in the industry and prepare a brief report.",
+            "completed": false,
+            "created": "2024-05-07T23:17:07.788Z",
+            "updated": "2024-05-07T23:17:07.789Z"
+        }
+    },
+    {
+        "model": "tasks.task",
+        "pk": 11,
+        "fields": {
+            "title": "Plan a client visit",
+            "slug": "plan-a-client-visit",
+            "description": "Coordinate with the client and plan a visit to their office for a face-to-face meeting.",
+            "completed": false,
+            "created": "2024-05-07T23:17:20.665Z",
+            "updated": "2024-05-07T23:17:20.665Z"
+        }
+    },
+    {
+        "model": "tasks.task",
+        "pk": 12,
+        "fields": {
+            "title": "Draft a press release",
+            "slug": "draft-a-press-release",
+            "description": "Write a press release for the upcoming product launch and get it approved by the management.",
+            "completed": false,
+            "created": "2024-05-07T23:17:35.097Z",
+            "updated": "2024-05-07T23:17:35.097Z"
+        }
+    },
+    {
+        "model": "tasks.task",
+        "pk": 13,
+        "fields": {
+            "title": "Conduct a competitor analysis",
+            "slug": "conduct-a-competitor-analysis",
+            "description": "Analyze the strategies and products of competitors and identify areas of improvement.",
+            "completed": false,
+            "created": "2024-05-07T23:17:50.008Z",
+            "updated": "2024-05-07T23:17:50.008Z"
+        }
+    },
+    {
+        "model": "tasks.task",
+        "pk": 14,
+        "fields": {
+            "title": "Plan social media posts for the week",
+            "slug": "plan-social-media-posts-for-the-week",
+            "description": "Plan and schedule engaging social media posts for the upcoming week.",
+            "completed": true,
+            "created": "2024-05-07T23:18:06.304Z",
+            "updated": "2024-05-07T23:18:06.304Z"
+        }
+    },
+    {
+        "model": "tasks.task",
+        "pk": 15,
+        "fields": {
+            "title": "Coordinate with the HR for new hires",
+            "slug": "coordinate-with-the-hr-for-new-hires",
+            "description": "Work with the HR team to onboard new hires and get them up to speed.",
+            "completed": false,
+            "created": "2024-05-07T23:18:18.499Z",
+            "updated": "2024-05-07T23:18:18.499Z"
+        }
+    }
+]

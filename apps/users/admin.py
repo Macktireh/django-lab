@@ -1,8 +1,10 @@
 from django.contrib import admin
+from django.contrib.auth.admin import GroupAdmin as AuthGroupAdmin
+from django.contrib.auth.models import Group as AuthGroup
 from django.utils.translation import gettext_lazy as _
 
 from apps.users.forms import UserChangeForm, UserCreationForm
-from apps.users.models import User
+from apps.users.models import Group, User
 
 
 @admin.register(User)
@@ -77,9 +79,17 @@ class UserAdmin(admin.ModelAdmin):
             },
         ),
     )
-    readonly_fields = ("email", "password", "date_joined", "last_login")
+    readonly_fields = ("date_joined", "last_login")
     search_fields = (
         "email",
         "name",
     )
     ordering = ("date_joined",)
+
+
+admin.site.unregister(AuthGroup)
+
+
+@admin.register(Group)
+class GroupAdmin(AuthGroupAdmin):
+    pass

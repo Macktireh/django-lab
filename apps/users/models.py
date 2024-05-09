@@ -2,6 +2,7 @@ from typing import Any
 
 from django.contrib.auth.base_user import BaseUserManager
 from django.contrib.auth.models import AbstractUser
+from django.contrib.auth.models import Group as AuthGroup
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 
@@ -52,3 +53,8 @@ class User(AbstractUser):
 
     def __str__(self) -> str:
         return f"{self.name} <{self.email}>"
+
+
+class Group(AuthGroup):
+    class Meta:
+        proxy = True

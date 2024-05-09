@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Task list
+{% endblock %}
+
+{% block content %}
+  <div class="container my-3">
+    <h3 class="text-center">Task list</h3>
+    <h5 class="text-center">Number of tasks: {{ tasks|length }} | number of completed tasks: {{ completed_tasks|length }}</h5>
+  </div>
+
+  <div class="container my-5 px-5">
+    <div class="d-flex justify-content-between align-items-center gap-2">
+      <input class="form-control" type="text" placeholder="Search" aria-label="Search" />
+      <button class="btn btn-primary" type="submit">Search</button>
+      <a href="{% url 'tasks:create' %}" class="btn btn-primary" up-target=".root">Create</a>
+    </div>
+  </div>
+
+  <div class="container my-5">
+    <ul class="list-group list-group-flush">
+      {% for task in tasks %}
+        {% include 'partials/task_item.html' %}
+        <hr />
+      {% endfor %}
+    </ul>
+  </div>
+
+  {% for message in messages %}
+    <div class="alert alert-dismissible {{ message.tags }} position-fixed top-0 end-0 m-3 z-10" role="alert">
+      <div>{{ message|safe }}</div>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+  {% endfor %}
+{% endblock %}
