@@ -6,6 +6,7 @@ from django_view_decorator import include_view_urls
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("unicorn/", include("django_unicorn.urls")),
+    path("stripe/", include("djstripe.urls", namespace="djstripe")),
     path("", include_view_urls()),
 ]
 
