@@ -13,6 +13,8 @@ dependencies = [
     "django>=5.0.6",
     "django-unicorn>=0.60.0",
     "django-view-decorator>=0.0.4",
+    "dj-stripe>=2.8.4",
+    "django-environ>=0.11.2",
 ]
 
 
@@ -32,10 +34,12 @@ newapp = "python manage.py startapp"
 makemigrations = "python manage.py makemigrations"
 migrate = "python manage.py migrate"
 start = "python manage.py runserver"
+shell = "python manage.py shell"
 createsuperuser = "python manage.py createsuperuser --email=admin@example.com --name=Admin"
 collectstatic = "python manage.py collectstatic"
 loaddata = "python manage.py loaddata"
 dumpdata = "python manage.py dumpdata"
+stripe_sync = "python manage.py djstripe_sync_models"
 tailwind = "npx tailwindcss -i ./static/src/input.css -o ./static/src/output.css --watch"
 rufffix = "ruff --fix --exit-zero ."
 ruffformat = "ruff format ."
