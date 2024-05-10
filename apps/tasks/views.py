@@ -3,6 +3,7 @@ from django.http import HttpRequest, HttpResponse, HttpResponsePermanentRedirect
 from django.shortcuts import get_object_or_404, redirect, render
 from django.views import View
 from django_view_decorator import namespaced_decorator_factory
+from djstripe.models import Product
 
 from apps.tasks.forms import TaskForm
 from apps.tasks.models import Task
@@ -73,3 +74,12 @@ class DeleteTaskView(View):
         task.delete()
         messages.success(request, "Task deleted successfully")
         return redirect("tasks:index")
+
+
+@routes(paths="pricing", name="pricing")
+class PricingView(View):
+    def get(self, request: HttpRequest) -> HttpResponse:
+        context = {
+            "products": Product.objects.all().order_by("created"),
+        }
+        return render(request, "tasks/pricing.html", context)

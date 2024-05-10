@@ -12,6 +12,10 @@
   </head>
   <body>
     {% csrf_token %}
+
+    <header>
+      {% include 'partials/navbar.html' %}
+    </header>
     
     <main class="root">
       {% block content %} {% endblock %}
